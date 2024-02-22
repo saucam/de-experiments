@@ -1,3 +1,4 @@
+kaggle
 pandas == 1.5.3
 pyarrow == 15.0.0
 pyspark == 3.5.0
