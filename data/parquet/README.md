@@ -83,6 +83,6 @@ For example, if we execute the following query in spark on a table t that has it
 select * from t where c1 > 1000;
 ```
 In this case, the filter c1 > 1000 can be pushed down to the parquet reader, which can eliminate reading RowGroups where column c1 values never exceed 1000, just by reading the metadata.
-- Parquet supports nested columns, using **[Dremel encoding]**(https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36632.pdf). This means we can use parquet even if our requirements warrant deeply nested schemas.
+- Parquet supports nested columns, using **[Dremel encoding](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/36632.pdf)**. This means we can use parquet even if our requirements warrant deeply nested schemas.
 - Parquet also supports creating specialized filters like **Bloom Filter** for specific use cases.
 - Parquet support data encryption, while allowing for a regular Parquet functionality (columnar projection, predicate pushdown, encoding and compression).
