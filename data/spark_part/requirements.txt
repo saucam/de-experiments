@@ -1,0 +1,4 @@
+kaggle
+nltk
+pandas == 1.5.3
+pyspark == 3.5.0
